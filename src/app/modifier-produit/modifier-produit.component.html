@@ -1,0 +1,32 @@
+<h3 class="m-4">Modifier Produit "{{produit.titre}}"</h3>
+<div class="col-lg-4 m-auto">
+
+    <form #f="ngForm" (ngSubmit)="modifierProduitHandler(f.value)">
+        <div class="row">
+            <div class="col">
+                <label for="titre">Titre</label>
+                <input [(ngModel)]="produit.titre" name="titre" type="text" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" placeholder="Enter Title">
+            </div>
+            <div class="col">
+                <label for="exampleInputPassword1">Description</label>
+                <input [(ngModel)]="produit.description" name="description" type="text" class="form-control"
+                id="exampleInputPassword1" placeholder="Description">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <label for="exampleInputPassword1">Prix</label>
+                <input [(ngModel)]="produit.prix" ngModel name="prix" type="text" class="form-control"
+                    id="exampleInputPassword1" placeholder="Prix">
+            </div>
+            <div class="col">
+                <label for="exampleInputPassword1">Image</label>
+                <input [(ngModel)]="produit.image" ngModel name="image" type="text" class="form-control"
+                    id="exampleInputPassword1" placeholder="Image">
+            </div>
+          </div>
+       
+        <button type="submit" class="btn btn-primary my-2">Modfier</button>
+    </form>
+</div>
