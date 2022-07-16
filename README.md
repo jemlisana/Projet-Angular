@@ -2,6 +2,6 @@
 Un administrateur peut, en plus de tout ca, ajouter un nouveau produit.
 
 élaboré par:
-Sana Jomli
-Yosr Mahfoudh
+Sana Jomli,
+Yosr Mahfoudh,
 Chayma Sakka
